@@ -1,0 +1,7 @@
+type Mutation {
+    Login(email: String!,password: String!,device_name: String!): String! 
+}
+
+type Query {
+    me: User! @guard @auth
+}
